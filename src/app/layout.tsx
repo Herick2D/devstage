@@ -1,10 +1,12 @@
 import './globals.css';
 
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 import { Montserrat, Oxanium } from 'next/font/google'; //importa fontes do google
 
+// Todas as definições visuais que são definidas aqui, são aplicadas em todas as páginas
+
 export const metadata: Metadata = {
-  title: "devstage", //titulo da pagina
+  title: 'devstage', //titulo da pagina
 };
 
 const oxanium = Oxanium({
@@ -14,7 +16,7 @@ const oxanium = Oxanium({
 });
 
 const montserrat = Montserrat({
-  weight: ['400', '600'], 
+  weight: ['400', '600'],
   subsets: ['latin'],
   variable: '--font-montserrat',
 });
